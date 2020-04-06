@@ -125,5 +125,5 @@ venv/*
 /local/
 /db_dumps/*
 /db_dumps
-/apps/accounts/migrations/
-/apps/donations/migrations/
+**/migrations
+**/migrations/**
