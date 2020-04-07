@@ -2,8 +2,8 @@
 * [Description](#blank-django-app-with-custom-user-app)
 * [Download and run](#download-and-run)
 
-# Blank Django app with Custom User app
-**This is a template Django application with extended User model:**
+# Blank Django project with Custom User app
+**This is a template Django project with extended User model:**
 
 * deleted username field (email as authentication)
 * custom password validators
