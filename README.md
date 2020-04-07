@@ -16,7 +16,6 @@
 * create virtualenvironment (run `virtualenv venv`)
 * activate virtualenvironment (run `source venv/bin/activate`)
 * install requirements (run `pip install -r requirements.txt` inside project repository)
-* change SECRET_KEY
 * change User model so it suits your needs
 * copy example_local_settings.py and change name to local_settings.py (conigure db and email backend if needed)
 * change secret_key in local_settings.py
