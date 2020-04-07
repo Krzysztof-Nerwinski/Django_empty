@@ -22,3 +22,6 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
+# from django.core.management.utils import get_random_secret_key
+# new_key = get_random_secret_key()
+SECRET_KEY = ''

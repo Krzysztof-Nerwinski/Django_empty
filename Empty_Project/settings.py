@@ -19,8 +19,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5%6zpn7r068*=7689+@r&4lyi$2z!*h!)!f%0%(c(1-_e$3pq%'
+""" Database and Email config and credentials in local_settings.py """
+try:
+    from Empty_Project.local_settings import *
+except ModuleNotFoundError:
+    print("local_settings.py missing!")
+    print("Fill out correct data and try again!")
+    exit(0)
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -119,10 +125,3 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'media/static')]
 
 STATIC_URL = '/media/static/'
 
-""" Database and Email config and credentials in local_settings.py """
-try:
-    from Empty_Project.local_settings import *
-except ModuleNotFoundError:
-    print("local_settings.py missing!")
-    print("Fill out correct data and try again!")
-    exit(0)
