@@ -12,9 +12,10 @@ class BigAndSmallLetterPasswordValidator:
         small_letters = len(list(filter(lambda letter: letter.islower(), [letter for letter in password])))
         if cap_letters < self.min_cap_letters and small_letters < self.min_small_letters:
             raise ValidationError(
-                _("Wymagana ilośc dużych liter: %(min_cap_letters)d"),
-                code='not_enough_cap_letters',
-                params={'min_cap_letters': self.min_cap_letters},
+                _("Wymagana ilośc dużych liter: %(min_cap_letters)d oraz małych liter %(min_small_letters)d"),
+                code='not_enough_cap_and_small_letters',
+                params={'min_cap_letters': self.min_cap_letters,
+                        'min_small_letters': self.min_small_letters},
             )
         if cap_letters < self.min_cap_letters:
             raise ValidationError(
@@ -25,7 +26,7 @@ class BigAndSmallLetterPasswordValidator:
         if small_letters < self.min_small_letters:
             raise ValidationError(
                 _("Wymagana ilośc małych liter: %(min_small_letters)d"),
-                code='not_enough_cap_letters',
+                code='not_enough_small_letters',
                 params={'min_small_letters': self.min_small_letters},
             )
 
