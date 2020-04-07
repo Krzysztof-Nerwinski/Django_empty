@@ -1,15 +1,16 @@
-# Content
-* [Description](#blank-django-app-with-custom-user-app)
+# Blank Django project with Custom User app
+## Content
+* [Description](#description)
 * [Download and run](#download-and-run)
 
-# Blank Django project with Custom User app
+# Description
 **This is a template Django project with extended User model:**
 
 * deleted username field (email as authentication)
 * custom password validators
 * tests for user manager and password validators
 
-## Download and run
+# Download and run
 **To run this project on Your computer follow these steps**
 * clone this repository
 * create virtualenvironment (run `virtualenv venv`)
