@@ -42,7 +42,7 @@
 * run `git init` (start fresh git repo)
 * run `git add .` (add all files to repo)
 * run `git commit -m "Initial commit"`
-* create new empty repo and copy repo url
+* create new empty repo and copy its url
 * run `git remote add origin your_new_repo.url` (e.g. git@github.com:<YOUR ACCOUNT>/<YOUR NEW_REPOSITORY>.git)
 * run `git push -u origin master` (or `git push -u --force origin master`)
 * You should have this project as a new clean repo on your git
