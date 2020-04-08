@@ -23,7 +23,7 @@
 * run makemigrations from manage.py
 * run migrate
 
-# How to rename project
+### How to rename project
 **In Pycharm select root project folder and do rename/refactor with seraching bot for references and in comments and strings If done manually follow steps below**
 * Change root folder name
 * in settings.py:
