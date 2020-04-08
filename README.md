@@ -38,11 +38,11 @@
 
 ### Moving project to a fresh git repository
 **To make sure git log doesn't contain any of this repo history follow below steps**
-* in project folder run rm -rf .git (remove complete git folder from this repo)
-* run git init (start fresh git repo)
-* run git add . (add all files to repo)
-* run git commit -m "Initial commit"
+* in project folder run `rm -rf .git` (remove complete git folder from this repo)
+* run `git init` (start fresh git repo)
+* run `git add .` (add all files to repo)
+* run `git commit -m "Initial commit"`
 * create new empty repo and copy repo url
-* run git remote add origin your_new_repo.url (e.g. git@github.com:<YOUR ACCOUNT>/<YOUR NEW_REPOSITORY>.git)
-* run git push -u origin master (or git push -u --force origin master)
+* run `git remote add origin your_new_repo.url` (e.g. git@github.com:<YOUR ACCOUNT>/<YOUR NEW_REPOSITORY>.git)
+* run `git push -u origin master` (or `git push -u --force origin master`)
 * You should have this project as a new clean repo on your git
