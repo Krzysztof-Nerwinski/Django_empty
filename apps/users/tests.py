@@ -129,8 +129,6 @@ class TestPasswordValidation(TestCase):
     def test_only_digits(self):
         with self.assertRaises(ValidationError) as exc:
             validate_password(self.password_only_numbers)
-        print(exc.exception.messages)
-        print(exc.exception.error_list)
         self.assertEqual(exc.exception.messages[0], self.messages['only_digits'])
         self.assertEqual(exc.exception.error_list[0].code, 'not_enough_cap_and_small_letters')
 
