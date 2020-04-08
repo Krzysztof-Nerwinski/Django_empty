@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 """ Database and Email config and credentials in local_settings.py """
 try:
-    from Empty_Project.local_settings import *
+    from .local_settings import *
 except ModuleNotFoundError:
     print("local_settings.py missing!")
     print("Fill out correct data and try again!")

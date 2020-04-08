@@ -1,5 +1,5 @@
 import os
-from Empty_Project.settings import BASE_DIR
+from .settings import BASE_DIR
 
 # SQlite3
 DATABASES = {
