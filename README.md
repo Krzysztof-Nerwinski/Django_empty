@@ -22,8 +22,8 @@
 * copy example_local_settings.py and change name to local_settings.py (conigure db and email backend if needed)
 * change secret_key in local_settings.py
 * if needed rename project [How to rename project in Django](#how-to-rename-project)
-* run makemigrations from manage.py
-* run migrate
+* run `makemigrations` from manage.py (or `makemigrations users` if makemigrations discovered no changes)
+* run `migrate`
 
 ### How to rename project
 **In Pycharm select root project folder and do rename/refactor with seraching bot for references and in comments and strings If done manually follow steps below**
