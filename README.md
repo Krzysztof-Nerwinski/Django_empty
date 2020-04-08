@@ -2,6 +2,7 @@
 ## Content
 * [Description](#description)
 * [Download and run](#download-and-run)
+* [How to rename project in Django](#how-to-rename-project)
 
 # Description
 **This is a template Django project with extended User model:**
